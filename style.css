@@ -9,8 +9,8 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./media/background.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(./media/background.jpg) no-repeat center center fixed;
+    background-size: cover;   
 }
 
 header {
@@ -154,10 +154,21 @@ footer span {
 #logogama {
     width: 50px;
     height: 50px;
+    filter: opacity(0.4);
+    transition: 300ms;
 }
+#logogama:hover {
+    filter: opacity(1)
+}
+
 #logohc {
     height: 50px;
-    width: 140px
+    width: 140px;
+    filter: opacity(0.4);
+    transition: 300ms;
+}
+#logohc:hover {
+    filter: opacity(1)
 }
 
 /* Typewriter animation to name */
