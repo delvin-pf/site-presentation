@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<img src="" alt="">
+		</div>
+		<ul>
+			<li>
+				<a href="https://github.com/delvin-pf/" target="_blank">github</a>
+			</li>
+			<li>
+				<a href="mailto:delvinwillperez@gmail.com">email</a>
+			</li>
+			<li>
+				<a href="https://wa.me/+5553981271678" target="_blank">me chame!</a>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<section class="container">
+			<div class="name">
+				<h1>Delvin Pérez</h1>
+				<h5>Full-Stack Developer</h5>
+			</div>
+
+			<div onclick="displayAbout()" id="arrow">
+				<ion-icon id="animation" name="caret-down-outline"></ion-icon>
+			</div>
+
+			<div style="visibility: hidden;" id="about">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, sint, mollitia doloremque ipsum
+					eos fugit voluptas dolor rerum ipsam dolore minima officiis soluta velit ad obcaecati vero deleniti,
+					maiores aliquid.
+				</p>
+			</div>
+
+			<div class="form">
+				<div>
+					<p>Deixe seu contato</p>
+				</div>
+				<form action="">
+					<input type="text" placeholder="Seu e-mail">
+					<button>enviar!</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>
+			<p>Desenvolvido por: Delvin Pérez</p>
+			<p>Com orientação do programa Hiring Coders #3</p>
+		</span>
+		<div class="patrocinio">
+			<a href="https://www.hiringcoders.com.br/" target="_blank"> <img id="logohc" src="./media/hc.jfif" alt=""> </a>
+			<a href="https://www.gama.academy/" target="_blank"> <img id="logogama" src="./media/gama.png" alt=""> </a>
+		</div>
+	</footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		function displayAbout() {
+			let arrow = document.getElementById('animation');
+			arrow.classList.toggle('rotate')
+			let about = document.getElementById('about');
+			about.classList.toggle('active')
+			
+		};
+	</script>
+</body>
+
+</html>

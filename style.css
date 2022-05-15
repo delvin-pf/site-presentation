@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgba(218, 255, 230, 0.986);
+    font-family: "Poppins", Helvetica, sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./media/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    font-style: italic;
+}
+
+header ul li {
+    padding: 10px;
+    min-width: fit-content;
+    transition: 30ms;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(199, 169, 228);
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.name > h1 {
+    font-size: 40px;
+    margin: 10px
+}
+
+.name > h5 {
+    font-size: 20px;
+    margin: 10px;
+}
+#arrow {
+    color: rgb(66, 66, 50);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 auto;
+    max-width: max-content;
+    animation: pisca 1s steps(10) infinite;
+    visibility: visible;
+    margin-top: 20px
+   
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+@keyframes pisca {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    font-size: 30px;
+    transition: 500ms;
+}
+
+#about {
+    justify-self: center;
+    margin: 15px auto;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.active {
+    visibility: visible !important;
+}
+
+.form {
+    width: 40%;
+    margin: 15px auto;
+    padding: 15px;
+    margin-top: 40px; 
+}
+
+.form input {
+    margin-top: 15px;
+    padding: 5px;
+    color: black;
+    border-style: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
+    color: black;
+    margin-left: -6px;
+    border-style: none;
+    height: 30px;
+    background: linear-gradient(to right, #a09038 50%, rgb(66, 66, 50));
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 0px 5px 5px 0px;
+    transition: 500ms;
+}
+.form button:hover {
+    background-position: left bottom;
+}
+
+footer {
+    display: flex;
+    margin: 10px auto;
+    margin-top: 30px;
+    border-top: 1px solid rgba(182, 204, 191, 0.356);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    padding: auto;
+    justify-content: space-between;
+}
+
+footer span {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.patrocinio {
+    padding: 5px;
+    padding-right: 15px;
+}
+
+#logogama {
+    width: 50px;
+    height: 50px;
+}
+#logohc {
+    height: 50px;
+    width: 140px
+}
+
+/* Typewriter animation to name */
+.name {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.name h5 {
+    margin: 0 auto;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: max-content;
+    animation: typewriter 1s 1s steps(15, end) forwards,
+        blink 800ms 1s steps(10) 3;
+    border-right: 2px solid transparent;
+}
+
+.name h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 0;
+    animation: typewriter 1s steps(11, end) forwards,
+        blink 800ms steps(10) 1.2;
+    border-right: 3px solid transparent;
+}
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: white;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
